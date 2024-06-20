@@ -36,8 +36,7 @@ export default function Home() {
   return (
     <div className='flex items-center justify-center'>
       <ExpenseForm addExpense={addExpense} />
-      {/* <ExpenseList expenses={expenses} /> */}
-      <ExpenseChart expenses={expenses} />
+      {/* <ExpenseChart expenses={expenses} /> */}
     </div>
   );
 }

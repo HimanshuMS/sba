@@ -10,7 +10,7 @@ interface ExpenseChartProps {
 }
 
 const ExpenseChart: React.FC<ExpenseChartProps> = ({ expenses }) => {
-  const data = expenses.reduce((acc, expense) => {
+  const data = expenses?.reduce((acc, expense) => {
     const existingCategory = acc.find((item) => item.category === expense.category);
     if (existingCategory) {
       existingCategory.amount += expense.amount;
